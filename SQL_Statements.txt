@@ -1,0 +1,14 @@
+
+  SELECT * FROM [dbo].Tweets WHERE TweetSourceType='CYBER' AND (TweetText LIKE '%CHINA%' OR TranslatedText LIKE '%CHINA%') ORDER BY Time
+  SELECT * FROM [dbo].Tweets WHERE TweetSourceType='CYBER' AND (TweetText LIKE '%RUSSIA%' OR TranslatedText LIKE '%RUSSIA%') ORDER BY Time
+  SELECT * FROM [dbo].Tweets WHERE TweetSourceType='CYBER' AND (TweetText LIKE '%UKRAIN%' OR TranslatedText LIKE '%UKRAIN%') ORDER BY Time
+  SELECT * FROM [dbo].Tweets WHERE TweetSourceType='CYBER' AND (TweetText LIKE '%AUSTRALIA%' OR TranslatedText LIKE '%AUSTRALIA%') ORDER BY Time
+  SELECT * FROM [dbo].Tweets WHERE TweetSourceType='CYBER' AND (TweetText LIKE '%CANADA%' OR TranslatedText LIKE '%CANADA%') ORDER BY Time
+  SELECT * FROM [dbo].Tweets WHERE TweetSourceType='CYBER' AND (TweetText LIKE '%JAPAN%' OR TranslatedText LIKE '%JAPAN%') ORDER BY Time
+  SELECT * FROM [dbo].Tweets WHERE TweetSourceType='CYBER' AND (TweetText LIKE '%IRAN%' OR TranslatedText LIKE '%IRAN%') ORDER BY Time
+  SELECT * FROM [dbo].Tweets WHERE TweetSourceType='CYBER' AND (TweetText LIKE '%KOREA%' OR TranslatedText LIKE '%KOREA%') ORDER BY Time
+  SELECT * FROM [dbo].Tweets WHERE TweetSourceType='CYBER' AND (TweetText LIKE '%INDIA%' OR TranslatedText LIKE '%INDIA%') ORDER BY Time
+  SELECT * FROM [dbo].Tweets WHERE TweetSourceType='CYBER' AND (TweetText LIKE '%BANGLADESH%' OR TranslatedText LIKE '%BANGLADESH%') ORDER BY Time
+
+  SELECT * FROM [dbo].Tweets WHERE TweetSourceType='CYBER' AND ((TweetText LIKE '%crisis%' or TweetText LIKE '%threat%' or TweetText LIKE '%issue%'  or TweetText LIKE '%problem%'  or TweetText LIKE '%crime%' or TweetText LIKE '%attack%' or TweetText LIKE '%warfare%' or TweetText LIKE '%alert%'or TweetText LIKE '%warn%') OR (TranslatedText LIKE '%crisis%' or TranslatedText LIKE '%threat%' or TranslatedText LIKE '%issue%'  or TranslatedText LIKE '%problem%'  or TranslatedText LIKE '%crime%' or TranslatedText LIKE '%attack%' or TranslatedText LIKE '%warfare%' or TranslatedText LIKE '%alert%'or TweetText LIKE '%warn%')) ORDER BY Time
+
